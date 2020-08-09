@@ -1,0 +1,6 @@
+#!/bin/bash
+cd /var/www/html
+echo "<html><body><h1>Hello World</h1></body></html>" > hello.html
+chmod 644 hello.html
+/bin/systemctl enable httpd
+/bin/systemctl start httpd
